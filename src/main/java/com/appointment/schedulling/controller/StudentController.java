@@ -29,7 +29,7 @@ public class StudentController {
 
 
     @GetMapping("/{id}")
-    public Optional<Student> findById(Long id){
+    public Optional<Student> findById(@PathVariable Long id){
         return studentService.findById(id);
     }
 

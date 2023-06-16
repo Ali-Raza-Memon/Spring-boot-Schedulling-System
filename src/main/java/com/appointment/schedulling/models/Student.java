@@ -28,6 +28,7 @@ public class Student {
     private String password;
 
 
+
     @ManyToOne
     @JoinColumn(name = "teacher_id")
     private Teacher teacher;
